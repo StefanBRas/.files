@@ -1,10 +1,6 @@
 alias calw='gcalcli --calendar=stefan-bruhn@hotmail.com calw --military --monday'
 alias calm='gcalcli --calendar=stefan-bruhn@hotmail.com calm --military --monday'
 alias cala='gcalcli --calendar=stefan-bruhn@hotmail.com agenda --military --monday'
-alias titwsync=~/pythondev/todoist-taskwarrior/venv/bin/titwsync
-alias reconnect="nmcli con up $(nmcli connection show | awk 'NR==2{print $1}')"
-alias newsboat="newsboat -r"
-alias pia="/opt/piavpn/bin/pia-client"
 alias hass_comp='eval "$(_HASS_CLI_COMPLETE=source hass-cli)"'
 alias vejr='curl wttr.in/Copenhagen?2QnF'
 alias vejrshort='curl wttr.in/Copenhagen?1QnF'
@@ -12,7 +8,6 @@ alias vejrv2='curl v2.wttr.in/Copenhagen'
 alias vejroneline='curl wttr.in/Copenhagen?format="%l:+%c+%t+%p+%o"'
 alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
-alias Todoist='nvim +Todoist'
 
 # using git for dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -40,5 +35,4 @@ alias activate='source .venv/bin/activate'
 
 # git stuff
 alias gst="git status"
-# nmcli
-alias nmcu="nmcli con up koden_er_123456"
+alias fixp="git add -u; git commit -m 'Fix pipeline'; git push"
